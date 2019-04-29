@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import ErrorComponent from '../lib/containers/Error/Error';
 import Head from '../lib/layouts/shared/Head/Head';
-import Body from '../lib/layouts/application/Body/Body';
+import BodyComponent from '../lib/layouts/application/Body/Body';
 
 const Error = (props) => {
   const { statusCode } = props;
@@ -40,9 +40,9 @@ const Error = (props) => {
   return (
     <div>
       <Head />
-      <Body sections={sections} dropdown={dropdown}>
+      <BodyComponent sections={sections} dropdown={dropdown}>
         <ErrorComponent status={statusCode} />
-      </Body>
+      </BodyComponent>
     </div>
   );
 };

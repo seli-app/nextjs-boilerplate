@@ -1,16 +1,16 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import Head from '../lib/layouts/shared/Head/Head';
-import Body from '../lib/layouts/application/Body/Body';
-import Users from '../lib/containers/Users/Users';
+import BodyComponent from '../lib/layouts/application/Body/Body';
+import UsersComponent from '../lib/containers/Users/Users';
 import actions from '../lib/store/actions';
 
 const UsersPage = () => (
   <div>
     <Head />
-    <Body>
-      <Users />
-    </Body>
+    <BodyComponent>
+      <UsersComponent />
+    </BodyComponent>
   </div>
 );
 

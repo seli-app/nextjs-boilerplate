@@ -1,8 +1,8 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import Head from '../lib/layouts/shared/Head/Head';
-import Body from '../lib/layouts/application/Body/Body';
-import Colors from '../lib/containers/Colors/Colors';
+import BodyComponent from '../lib/layouts/application/Body/Body';
+import ColorsComponent from '../lib/containers/Colors/Colors';
 import actions from '../lib/store/actions';
 
 const ColorsPage = () => {
@@ -41,9 +41,9 @@ const ColorsPage = () => {
   return (
     <div>
       <Head />
-      <Body sections={sections} dropdown={dropdown}>
-        <Colors />
-      </Body>
+      <BodyComponent sections={sections} dropdown={dropdown}>
+        <ColorsComponent />
+      </BodyComponent>
     </div>
   );
 };
